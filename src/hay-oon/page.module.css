@@ -21,23 +21,6 @@
   gap: 3rem;
 }
 
-.skillsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.skillCard {
-  background: #f5f5f7;
-  border-radius: 18px;
-  padding: 2rem;
-  transition: transform 0.2s ease;
-}
-
-.skillCard:hover {
-  transform: scale(1.02);
-}
-
 .contactSection {
   text-align: center;
 }
@@ -48,4 +31,84 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
+}
+
+.featuredSection {
+  margin: 4rem 0;
+}
+
+.featuredTitle {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.featuredSubtitle {
+  text-align: center;
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.featuredGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.featuredCard {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  border: 1px solid #e5e5e5;
+}
+
+.projectIcon {
+  width: 80px;
+  height: 80px;
+  background: #f5f5f7;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.projectInfo h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.projectInfo p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.projectMeta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.projectType,
+.projectDate {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.readMore {
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.readMore:hover {
+  text-decoration: underline;
+}
+
+.seeAllLink {
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
 }
