@@ -1,0 +1,51 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skillCard {
+  background: #f5f5f7;
+  border-radius: 18px;
+  padding: 2rem;
+  transition: transform 0.2s ease;
+}
+
+.skillCard:hover {
+  transform: scale(1.02);
+}
+
+.contactSection {
+  text-align: center;
+}
+
+.contactSection ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
