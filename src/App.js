@@ -9,10 +9,11 @@ function App() {
       <BrowserRouter>
         <Header />
         <main>
-          <HeroSection />
+          <Routes>
+            <Route path="/" element={<HeroSection />} />
+          </Routes>
         </main>
         <Footer />
-        <Routes></Routes>
       </BrowserRouter>
     </div>
   );

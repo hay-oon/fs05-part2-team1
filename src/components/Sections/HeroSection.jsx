@@ -1,65 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./HeroSection.css";
-
-const TEAM_MEMBERS = [
-  {
-    name: "HAYOON JEONG",
-    position: "CEO",
-    image:
-      "https://littledeep.com/wp-content/uploads/2019/04/littledeep_person_style1.png",
-  },
-  {
-    name: "SEUNGYEON GA",
-    position: "CTO",
-    image:
-      "https://littledeep.com/wp-content/uploads/2019/04/littledeep_person_style1.png",
-  },
-  {
-    name: "HANSAEM JEONG",
-    position: "CTO",
-    image:
-      "https://littledeep.com/wp-content/uploads/2019/04/littledeep_person_style1.png",
-  },
-  {
-    name: "YURI CHOI",
-    position: "CTO",
-    image:
-      "https://i.pinimg.com/736x/e3/ff/87/e3ff87b0270bd011a8670e85e22e8bc7.jpg",
-  },
-  {
-    name: "DONGHYUK LEE",
-    position: "CTO",
-    image:
-      "https://littledeep.com/wp-content/uploads/2019/04/littledeep_person_style1.png",
-  },
-  {
-    name: "EUNBI CHOI",
-    position: "CTO",
-    image:
-      "https://i.pinimg.com/736x/e3/ff/87/e3ff87b0270bd011a8670e85e22e8bc7.jpg",
-  },
-];
-
-const HIRING_STEPS = [
-  {
-    number: "01",
-    title: "서류 지원",
-    description:
-      "이력서와 포트폴리오를 제출해 주세요.\n7일 이내 검토 후 연락드립니다.",
-  },
-  {
-    number: "02",
-    title: "기술 면접",
-    description:
-      "실무진과 함께하는 기술 면접을 통해\n서로를 이해하는 시간을 가집니다.",
-  },
-  {
-    number: "03",
-    title: "최종 면접",
-    description:
-      "회사의 비전과 가치관을 공유하고\n함께할 수 있는지 이야기합니다.",
-  },
-];
 
 const TeamCard = ({ member, index }) => (
   <div key={index} className="team-card">
@@ -109,9 +50,54 @@ const HeroSection = () => {
             실력과 열정을 가진 사람들이 모여 만든 팀입니다
           </p>
           <div className="team-grid">
-            {TEAM_MEMBERS.map((member, index) => (
-              <TeamCard key={index} member={member} index={index} />
-            ))}
+            <TeamCard
+              member={{
+                name: "HAYOON JEONG",
+                position: "CEO",
+                image:
+                  "https://littledeep.com/wp-content/uploads/2019/04/littledeep_person_style1.png",
+              }}
+            />
+            <TeamCard
+              member={{
+                name: "SEUNGYEON GA",
+                position: "CTO",
+                image:
+                  "https://littledeep.com/wp-content/uploads/2019/04/littledeep_person_style1.png",
+              }}
+            />
+            <TeamCard
+              member={{
+                name: "HANSAEM JEONG",
+                position: "CTO",
+                image:
+                  "https://littledeep.com/wp-content/uploads/2019/04/littledeep_person_style1.png",
+              }}
+            />
+            <TeamCard
+              member={{
+                name: "YURI CHOI",
+                position: "CTO",
+                image:
+                  "https://i.pinimg.com/736x/e3/ff/87/e3ff87b0270bd011a8670e85e22e8bc7.jpg",
+              }}
+            />
+            <TeamCard
+              member={{
+                name: "DONGHYUK LEE",
+                position: "CTO",
+                image:
+                  "https://littledeep.com/wp-content/uploads/2019/04/littledeep_person_style1.png",
+              }}
+            />
+            <TeamCard
+              member={{
+                name: "EUNBI CHOI",
+                position: "CTO",
+                image:
+                  "https://i.pinimg.com/736x/e3/ff/87/e3ff87b0270bd011a8670e85e22e8bc7.jpg",
+              }}
+            />
           </div>
         </div>
       </section>
@@ -123,9 +109,30 @@ const HeroSection = () => {
             함께 성장하고 혁신을 만들어갈 동료를 찾습니다
           </p>
           <div className="hiring-process">
-            {HIRING_STEPS.map((step, index) => (
-              <HiringStep key={index} step={step} />
-            ))}
+            <HiringStep
+              step={{
+                number: "01",
+                title: "서류 지원",
+                description:
+                  "이력서와 포트폴리오를 제출해 주세요.\n7일 이내 검토 후 연락드립니다.",
+              }}
+            />
+            <HiringStep
+              step={{
+                number: "02",
+                title: "기술 면접",
+                description:
+                  "실무진과 함께하는 기술 면접을 통해\n서로를 이해하는 시간을 가집니다.",
+              }}
+            />
+            <HiringStep
+              step={{
+                number: "03",
+                title: "최종 면접",
+                description:
+                  "회사의 비전과 가치관을 공유하고\n함께할 수 있는지 이야기합니다.",
+              }}
+            />
           </div>
         </div>
       </section>
