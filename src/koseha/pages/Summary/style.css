@@ -1,0 +1,31 @@
+.seha__summary {
+  background: linear-gradient(
+      180deg,
+      rgba(112, 93, 80, 0.8) 0%,
+      rgba(112, 93, 80, 0.8) 90%
+    ),
+    url("assets/images/seha__summary-bg.jpg") 50% no-repeat;
+  background-size: cover;
+  padding: 7rem 0 4rem;
+}
+
+.seha__summary > * {
+  text-align: center;
+}
+.seha__summary > h1 {
+  color: #fff;
+}
+.seha__summary > hr {
+  margin: 1.5rem auto;
+  width: 3.25rem;
+  height: 0.2rem;
+  background-color: #f4623a;
+  border: none;
+}
+
+.seha__summary-info {
+  font-size: 1.25rem;
+  color: #e2e2e2;
+  letter-spacing: 0.06rem;
+  line-height: 1.5;
+}
