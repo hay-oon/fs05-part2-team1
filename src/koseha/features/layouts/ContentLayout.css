@@ -1,0 +1,19 @@
+.content-layout {
+  padding: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-layout-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.content-layout-title h2 {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-left: 0.4rem;
+}
