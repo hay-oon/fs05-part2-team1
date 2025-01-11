@@ -1,5 +1,6 @@
 import "./ContentLayout.css";
-import { FlameOutline } from "react-ionicons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFire } from "@fortawesome/free-solid-svg-icons";
 
 const ContentLayout = ({
   children,
@@ -19,11 +20,13 @@ const ContentLayout = ({
 
   return (
     <section className={`content-layout`} id={id} style={styleSection}>
-      <div className="content-layout-title">
-        <FlameOutline width="44px" height="44px" color={"#f4623a"} />
-        <h2 style={styleTitle}>{title}</h2>
+      <div className="layout-wrapper">
+        <div className="content-layout-title">
+          <FontAwesomeIcon icon={faFire} className="custom-icon" />
+          <h2 style={styleTitle}>{title}</h2>
+        </div>
+        {children}
       </div>
-      {children}
     </section>
   );
 };
