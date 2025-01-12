@@ -15,3 +15,17 @@
   font-size: 4rem;
   font-weight: 400;
 }
+
+@media (min-width: 644px) and (max-width: 1000px) {
+  .seha h1 {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 643px) {
+  .seha h1 {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+}

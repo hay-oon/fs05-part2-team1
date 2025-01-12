@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 1140px;
+  max-width: 1140px;
   margin: 0 auto;
 }
 
@@ -21,4 +21,24 @@
 .content-layout-title .custom-icon {
   font-size: 2.6rem;
   color: #f4623a;
+}
+
+@media (min-width: 644px) and (max-width: 1000px) {
+  .content-layout-title h2 {
+    font-size: 2.6rem;
+  }
+
+  .content-layout-title .custom-icon {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 643px) {
+  .content-layout-title h2 {
+    font-size: 2.4rem;
+  }
+
+  .content-layout-title .custom-icon {
+    font-size: 2.08rem;
+  }
 }

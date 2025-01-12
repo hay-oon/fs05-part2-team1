@@ -47,10 +47,12 @@ const AboutMe = () => {
     <div className="seha__aboutme">
       {categories.map((item, i) => (
         <div className="aboutme-item">
-          <FontAwesomeIcon icon={item.icon} className="custom-icon" />
-          <div className="aboutme-text">
-            <div>{item.category}</div>
-            <div>{item.content}</div>
+          <div className="aboutme-item__wrapper">
+            <FontAwesomeIcon icon={item.icon} className="custom-icon" />
+            <div className="aboutme-text">
+              <div>{item.category}</div>
+              <div>{item.content}</div>
+            </div>
           </div>
         </div>
       ))}
