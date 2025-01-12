@@ -4,6 +4,7 @@ import ScrollButton from "./features/buttons/ScrollButton";
 import AboutMe from "./sections/AboutMe";
 import ContentLayout from "./features/layouts/ContentLayout";
 import Skills from "./sections/Skills";
+import Archiving from "./sections/Archiving";
 
 const Seha = () => {
   return (
@@ -18,6 +19,16 @@ const Seha = () => {
       {/* skills */}
       <ContentLayout title="SKILLS" id="skills" backgroundColor="#f9c51d">
         <Skills />
+      </ContentLayout>
+      {/* archiving */}
+      <ContentLayout
+        title="ARCHIVING"
+        id="archiving"
+        backgroundColor="#222222"
+        color="#ffffff"
+        titleBorderColor="#6c757d"
+      >
+        <Archiving />
       </ContentLayout>
       {/* projects */}
     </div>
