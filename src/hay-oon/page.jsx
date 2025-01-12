@@ -1,6 +1,6 @@
 import "./page.css";
 
-export default function IntroductionPage() {
+export default function Hayoon() {
   return (
     <section className="container">
       <div className="featuredSection">

@@ -1,8 +1,10 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
-
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen;
 }
 
 .featuredSection {
@@ -13,6 +15,7 @@
   font-size: 48px;
   font-weight: 600;
   text-align: center;
+  margin-top: 40px;
   margin-bottom: 8px;
 }
 
@@ -24,6 +27,10 @@
 
 .featuredContent {
   font-size: 14px;
+}
+
+.featuredContent p {
+  margin: 12px 0;
 }
 
 .featuredGrid {
@@ -60,6 +67,14 @@
   margin: 0 auto;
   padding: 32px;
   border-radius: 12px;
+}
+
+.graySectionCard h2 {
+  margin-bottom: 8px;
+}
+
+.graySectionCard p {
+  margin: 16px 0;
 }
 
 .graySectionTitle {
@@ -143,7 +158,7 @@
   width: 100%;
   max-width: 980px;
   margin: 0 auto;
-  margin-top: 32px;
+  margin-top: 48px;
 }
 
 .flexGridCard {
@@ -154,6 +169,14 @@
   padding: 32px;
   border-radius: 24px;
   aspect-ratio: 1 / 1;
+}
+
+.flexGridCard h3 {
+  margin-bottom: 8px;
+}
+
+.flexGridCard p {
+  margin: 0;
 }
 
 .flexGridCardTitle {
@@ -230,6 +253,10 @@
 .contactSection {
   text-align: center;
   padding: 72px 0;
+}
+
+.contactSection h2 {
+  margin-bottom: 24px;
 }
 
 .contactSection ul {
