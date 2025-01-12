@@ -60,14 +60,16 @@ const HeroSection = () => {
                 }}
               />
             </Link>
-            <TeamCard
-              member={{
-                name: "SEUNGYEON GA",
-                position: "CTO",
-                image:
-                  "https://littledeep.com/wp-content/uploads/2019/04/littledeep_person_style1.png",
-              }}
-            />
+            <Link to="/syga">
+              <TeamCard
+                member={{
+                  name: "SEUNGYEON GA",
+                  position: "CTO",
+                  image:
+                    "https://littledeep.com/wp-content/uploads/2019/04/littledeep_person_style1.png",
+                }}
+              />
+            </Link>
             <TeamCard
               member={{
                 name: "HANSAEM JEONG",

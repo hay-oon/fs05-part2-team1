@@ -4,8 +4,10 @@ import HeroSection from "./components/Sections/HeroSection";
 import Seha from "koseha";
 import Hayoon from "./hay-oon/page";
 import Footer from "./components/Footer/Footer";
-import Sygamain from "syyga/Sygamain";
+import Syga from "syyga/Syga";
 import "./App.css";
+import SygaHistory from "./syyga/SygaHistory";
+import Military from "./syyga/Millitary";
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
             <Route path="/" element={<HeroSection />} />
             <Route path="/seha" element={<Seha />} />
             <Route path="/hay-oon" element={<Hayoon />} />
-            <Route path="/syga" element={<Sygamain />} />
+            <Route path="/syga" element={<Syga />} />
+            <Route path="/intro" element={<SygaHistory />} />
+            <Route path="/millitary" element={<Military />} />
           </Routes>
         </main>
         <Footer />
