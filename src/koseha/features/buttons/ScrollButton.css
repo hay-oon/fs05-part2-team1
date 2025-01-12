@@ -1,0 +1,54 @@
+.mouse-scroll {
+  background: #f4623a;
+  margin: 2rem auto 0;
+  width: 2.8rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 10px #e2e2e2;
+  animation: hover 3s linear infinite;
+  cursor: pointer;
+}
+
+.scroll-arrow {
+  transform: rotate(45deg);
+  width: 1rem;
+  height: 1rem;
+  border-right: 2px solid #e2e2e2;
+  border-bottom: 2px solid #e2e2e2;
+  animation: scroll 1s infinite alternate;
+}
+.scroll-arrow:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.scroll-arrow:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.scroll-arrow:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes hover {
+  0%,
+  100% {
+    transform: translateY(0px);
+    /* box-shadow: 0 8px 24px rgba(0, 0, 0, 0.219); */
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
