@@ -56,22 +56,17 @@ export default function IntroductionPage() {
         <div className="interSection">
           <div className="interSectionInner">
             <div className="interSectionLeft">
-              <h3 className="interSectionTitle">Get Support</h3>
-              <p className="interSectionSubtitle">
-                Give us a few details and we'll offer the best solution. Connect
-                by phone, chat, email, and more.
-              </p>
+              <h3 className="interSectionTitle">여기에 youtube search api</h3>
+              <p className="interSectionSubtitle">subtitle here</p>
               <a href="#" className="interSectionLink">
-                Start now
+                추가 컴포넌트로
               </a>
             </div>
             <div className="interSectionRight">
-              <h3 className="interSectionTitle">Portfolio App</h3>
-              <p className="interSectionSubtitle">
-                Get help for all of your projects in one place.
-              </p>
+              <h3 className="interSectionTitle">또 다른 api 추가</h3>
+              <p className="interSectionSubtitle">subtitle here</p>
               <a href="#" className="interSectionLink">
-                Download
+                추가 컴포넌트로
               </a>
             </div>
           </div>
