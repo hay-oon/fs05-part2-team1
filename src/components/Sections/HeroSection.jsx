@@ -50,14 +50,16 @@ const HeroSection = () => {
             실력과 열정을 가진 사람들이 모여 만든 팀입니다
           </p>
           <div className="team-grid">
-            <TeamCard
-              member={{
-                name: "HAYOON JEONG",
-                position: "CEO",
-                image:
-                  "https://littledeep.com/wp-content/uploads/2019/04/littledeep_person_style1.png",
-              }}
-            />
+            <Link to="/hay-oon">
+              <TeamCard
+                member={{
+                  name: "HAYOON JEONG",
+                  position: "CEO",
+                  image:
+                    "https://littledeep.com/wp-content/uploads/2019/04/littledeep_person_style1.png",
+                }}
+              />
+            </Link>
             <TeamCard
               member={{
                 name: "SEUNGYEON GA",
