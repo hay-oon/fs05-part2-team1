@@ -26,11 +26,12 @@
 }
 
 .featuredContent {
+  margin-top: 16px;
   font-size: 14px;
 }
 
 .featuredContent p {
-  margin: 12px 0;
+  margin: 16px 0;
 }
 
 .featuredGrid {
@@ -69,19 +70,11 @@
   border-radius: 12px;
 }
 
-.graySectionCard h2 {
-  margin-bottom: 8px;
-}
-
-.graySectionCard p {
-  margin: 16px 0;
-}
-
 .graySectionTitle {
   font-size: 32px;
   font-weight: 600;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 16px;
 }
 
 .graySectionSubtitle {
@@ -116,19 +109,18 @@
 
 .interSectionLeft {
   flex: 2;
-  padding: 32px 96px 32px 32px;
   border-right: 12px solid #f5f5f7;
 }
 
 .interSectionRight {
   flex: 1;
-  padding: 32px 32px 32px 96px;
+  padding: 32px;
 }
 
 .interSectionTitle {
   font-size: 32px;
   font-weight: 600;
-  margin: 0;
+  margin-bottom: 16px;
 }
 
 .interSectionSubtitle {
@@ -273,6 +265,37 @@
   text-decoration: none;
 }
 
+.londonInfoContainer,
+.devInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.londonInfoItem,
+.devInfoItem {
+  border: 1px solid #e5e5e7;
+  padding: 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.londonInfoItem:hover,
+.devInfoItem:hover {
+  background-color: #e5e5e7;
+}
+
+.londonInfoItem h4,
+.devInfoItem h4 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 768px) {
   .nameLogoWrapper {
     flex-direction: column;
@@ -339,5 +362,236 @@
   .contactSection ul {
     flex-direction: column;
     gap: 16px;
+  }
+
+  .londonInfoContainer,
+  .devInfoContainer {
+    gap: 16px;
+  }
+
+  .londonInfoItem,
+  .devInfoItem {
+    padding: 12px;
+  }
+
+  .londonInfoItem h4,
+  .devInfoItem h4 {
+    font-size: 16px;
+  }
+}
+
+.tubeStatusList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.tubeLineStatus {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #f5f5f7;
+  border-radius: 8px;
+  gap: 8px;
+}
+
+.tubeLineName {
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  font-size: 14px;
+}
+
+.tubeLineStatus p {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.statusIndicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.status-good {
+  background-color: #2ecc71;
+}
+
+.status-minor {
+  background-color: #f1c40f;
+}
+
+.status-severe {
+  background-color: #e74c3c;
+}
+
+@media screen and (max-width: 768px) {
+  .tubeStatusList {
+    grid-template-columns: 1fr;
+  }
+}
+
+.newsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.newsItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #f5f5f7;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.newsItem:hover {
+  background-color: #e5e5e7;
+  transform: translateY(-2px);
+}
+
+.newsContent {
+  flex: 1;
+}
+
+.newsTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+}
+
+.newsMetadata {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.newsReactions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  .newsTitle {
+    font-size: 14px;
+  }
+
+  .newsMetadata {
+    font-size: 12px;
+  }
+}
+
+.weatherContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.weatherInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.weatherIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.weatherTemp {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.weatherDesc {
+  color: #666;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+  .weatherIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .weatherTemp {
+    font-size: 20px;
+  }
+}
+
+.exchange-rate-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.currency-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f5f5f7;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.currency-amount {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.currency-code {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.exchange-rate-equals {
+  font-size: 20px;
+  color: #666;
+}
+
+.update-time {
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .currency-amount {
+    font-size: 20px;
+  }
+
+  .currency-code {
+    font-size: 12px;
+  }
+
+  .exchange-rate-equals {
+    font-size: 16px;
+  }
+
+  .currency-box {
+    padding: 6px 12px;
   }
 }
