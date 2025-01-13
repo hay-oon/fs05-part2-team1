@@ -1,0 +1,67 @@
+.dataImg {
+    width: 20rem;
+    height: 15rem;
+    border-radius: 1rem;
+}
+
+.dataDiv {
+    background-color: rgb(247, 247, 247);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+    align-items: center;
+    width: 40rem;
+}
+
+.dataInfo {
+    color:rgb(56, 56, 56);
+    text-decoration: none;
+    width: 13rem;
+    margin-right: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+}
+
+.regionList {
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.unSelectedRegion {
+    padding: 0.5rem;
+    border-radius: 1.2rem;
+    min-width: 4rem;
+    background-color: rgb(236, 236, 236);
+    margin-bottom: 0rem;
+    cursor: pointer;
+}
+
+.selectedRegion {
+    padding: 0.5rem;
+    min-width: 4rem;
+    border-radius: 1.2rem;
+    background-color: rgb(168, 168, 168);
+    color: white;
+
+}
+
+.listTitle {
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+
+.line {
+    margin: 0 auto;
+    width: 9rem;
+}
+
+.message {
+    margin: 1rem auto;
+    width: 12rem;
+}

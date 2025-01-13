@@ -92,6 +92,7 @@ const HeroSection = () => {
                 comingSoon: true,
               }}
             />
+            <Link to='/hyuk'>
             <TeamCard
               member={{
                 name: "DONGHYUK LEE",
@@ -100,6 +101,7 @@ const HeroSection = () => {
                   "https://littledeep.com/wp-content/uploads/2019/04/littledeep_person_style1.png",
               }}
             />
+            </Link>
             <TeamCard
               member={{
                 name: "EUNBI CHOI",
