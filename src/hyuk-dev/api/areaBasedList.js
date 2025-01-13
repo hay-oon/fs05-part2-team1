@@ -3,7 +3,7 @@ export async function areaBasedList(areaCode, pageNo) {
     const baseUrl =
       'https://apis.data.go.kr/B551011/KorPetTourService/';
     const serviceKey =
-      'AYFVlEd0R0QZWnDU3jbAkBnymp64940DxOVcMerjuDzMmqVUQ9nVmCLspL%2FZIwCwh0%2F2bu9Qp4%2FbkAcxmybS1w%3D%3D';
+      'PXuIQOq2fdqGdnEGgF4OduaVMgvVK%2BPGa%2FarCi7B%2B36oXTLcH%2Bwnc%2F92xaDP%2FZHITRrN%2FCz1Jn6QmNQlYnTmuQ%3D%3D';
     const MobileOS = 'ETC';
     const MobileApp = 'PetTourRecommendation';
   
