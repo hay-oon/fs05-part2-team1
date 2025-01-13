@@ -53,7 +53,7 @@ function GitHubYearContributions() {
 
       // console.log(dailyContributions);
       // setContributions(dailyContributions);
-      const date = new Date(mock[0].date);
+      const date = new Date(dailyContributions[0].date);
       const startDay = date.getDay();
       setArr([
         ...Array.from({ length: startDay }).fill(null),
