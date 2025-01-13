@@ -1,0 +1,708 @@
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.featuredSection {
+  padding: 48px 0;
+}
+
+.featuredTitle {
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 8px;
+}
+
+.featuredSubtitle {
+  text-align: center;
+  color: #666;
+  font-size: 18px;
+}
+
+.featuredContent {
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.featuredContent p {
+  margin: 16px 0;
+}
+
+.featuredGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.featuredCard {
+  display: flex;
+  gap: 32px;
+  padding: 32px;
+  background: #fff;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  border: 1px solid #e5e5e5;
+}
+
+.grayBackground {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #f5f5f7;
+  padding: 16px 0 48px 0;
+  width: 100%;
+}
+
+.graySectionWrapper {
+  display: flex;
+  gap: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.graySectionCard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fff;
+  flex: 1;
+  margin: 0 auto;
+  padding: 32px;
+  border-radius: 12px;
+  max-width: 780px;
+}
+
+.graySectionCard.wide-card {
+  max-width: 1200px;
+  width: calc(100% - 32px);
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.graySectionTitle {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.graySectionSubtitle {
+  font-size: 16px;
+  color: #666;
+}
+
+.interSection {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.interSectionInner {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.interSectionLeft,
+.interSectionRight {
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #fff;
+}
+
+.interSectionLeft {
+  flex: 2;
+  border-right: 12px solid #f5f5f7;
+}
+
+.interSectionRight {
+  flex: 1;
+  padding: 32px;
+}
+
+.interSectionTitle {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.interSectionSubtitle {
+  font-size: 16px;
+  color: #666;
+  margin: 0;
+  max-width: 400px;
+}
+
+.interSectionLink {
+  color: #0066cc;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.interSectionLink:hover {
+  text-decoration: underline;
+}
+
+.flexGridWrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  margin-top: 48px;
+}
+
+.flexGridCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 32px;
+  border-radius: 24px;
+  aspect-ratio: 1 / 1;
+}
+
+.flexGridCard h3 {
+  margin-bottom: 8px;
+}
+
+.flexGridCard p {
+  margin: 0;
+}
+
+.flexGridCardTitle {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.flexGridCardSubtitle {
+  font-size: 16px;
+  color: #666;
+}
+
+.flexGridCardImage {
+  margin-top: 60px;
+}
+
+.nameLogoWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.nameWrapper {
+  padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoImage {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.nameLine {
+  display: flex;
+  gap: 4px;
+}
+
+.nameChar {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.black {
+  color: #3d3b40;
+}
+
+.navy {
+  color: #687980;
+}
+
+.gray {
+  color: #666666;
+}
+
+.pastelBlue {
+  color: #bfcfe7;
+}
+
+.contactSection {
+  text-align: center;
+  padding: 72px 0;
+}
+
+.contactSection h2 {
+  margin-bottom: 24px;
+}
+
+.contactSection ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  color: #666;
+}
+
+.contactSection li a {
+  color: #666;
+  text-decoration: none;
+}
+
+.londonInfoContainer,
+.devInfoContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.londonInfoItem,
+.devInfoItem {
+  border: 1px solid #e5e5e7;
+  padding: 16px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.londonInfoItem:hover,
+.devInfoItem:hover {
+  background-color: #e5e5e7;
+}
+
+.londonInfoItem h4,
+.devInfoItem h4 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .nameLogoWrapper {
+    flex-direction: column;
+    padding: 0 16px;
+    gap: 16px;
+  }
+
+  .nameWrapper {
+    padding: 24px 0;
+    align-items: center;
+  }
+
+  .logoImage {
+    width: 120px;
+    height: 120px;
+  }
+
+  .nameChar {
+    font-size: 36px;
+  }
+
+  .featuredSubtitle {
+    font-size: 16px;
+  }
+
+  .graySectionWrapper {
+    flex-direction: column;
+  }
+
+  .graySectionCard {
+    min-width: auto;
+    padding: 24px 16px;
+  }
+
+  .graySectionCard.wide-card {
+    width: calc(100% - 32px);
+    margin: 0 16px;
+    padding: 24px 16px;
+  }
+
+  .interSectionInner {
+    flex-direction: column;
+  }
+
+  .interSectionLeft {
+    padding: 24px;
+    border-right: none;
+    border-bottom: 12px solid #f5f5f7;
+  }
+
+  .interSectionRight {
+    padding: 24px;
+  }
+
+  .flexGridWrapper {
+    grid-template-columns: 1fr;
+    margin: 16px;
+  }
+
+  .flexGridCard {
+    aspect-ratio: auto;
+    padding: 24px;
+  }
+
+  .flexGridCardImage {
+    margin-top: 24px;
+  }
+
+  .contactSection {
+    padding: 48px 16px;
+  }
+
+  .contactSection ul {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .londonInfoContainer,
+  .devInfoContainer {
+    gap: 16px;
+  }
+
+  .londonInfoItem,
+  .devInfoItem {
+    padding: 12px;
+  }
+
+  .londonInfoItem h4,
+  .devInfoItem h4 {
+    font-size: 16px;
+  }
+
+  .newsTitle {
+    font-size: 14px;
+  }
+
+  .newsMetadata {
+    font-size: 12px;
+  }
+
+  .weatherIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .weatherTemp {
+    font-size: 20px;
+  }
+
+  .currency-amount {
+    font-size: 20px;
+  }
+
+  .currency-code {
+    font-size: 12px;
+  }
+
+  .exchange-rate-equals {
+    font-size: 16px;
+  }
+
+  .currency-box {
+    padding: 6px 12px;
+  }
+
+  .tubeStatusList {
+    grid-template-columns: 1fr;
+  }
+
+  .weatherIcon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.tubeStatusList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.tubeLineStatus {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: #f5f5f7;
+  border-radius: 8px;
+  gap: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tubeLineStatus:hover {
+  background-color: #e5e5e7;
+  transform: translateY(-2px);
+}
+
+.tubeLineName {
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  font-size: 14px;
+}
+
+.tubeLineStatus p {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.statusIndicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 4px;
+}
+
+.status-good {
+  background-color: #2ecc71;
+}
+
+.status-minor {
+  background-color: #f1c40f;
+}
+
+.status-severe {
+  background-color: #e74c3c;
+}
+
+.newsList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.newsItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #f5f5f7;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.newsItem:hover {
+  background-color: #e5e5e7;
+  transform: translateY(-2px);
+}
+
+.newsContent {
+  flex: 1;
+}
+
+.newsTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+}
+
+.newsMetadata {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.newsReactions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* 날씨 관련 스타일 */
+.weatherContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.weatherInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.weatherIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.weatherTemp {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.weatherDesc {
+  color: #666;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+/* 환율 관련 스타일 */
+.exchange-rate-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.currency-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f5f5f7;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+.currency-amount {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.currency-code {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+.exchange-rate-equals {
+  font-size: 20px;
+  color: #666;
+}
+
+.update-time {
+  font-size: 12px;
+  color: #999;
+  margin: 0;
+}
+
+/* 모바일 반응형 스타일 */
+@media screen and (max-width: 768px) {
+  .weatherIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .weatherTemp {
+    font-size: 20px;
+  }
+
+  .currency-amount {
+    font-size: 20px;
+  }
+
+  .currency-code {
+    font-size: 12px;
+  }
+
+  .exchange-rate-equals {
+    font-size: 16px;
+  }
+
+  .currency-box {
+    padding: 6px 12px;
+  }
+}
+
+.timeDisplay {
+  font-size: 16px;
+  color: #999;
+  margin: 0;
+}
+
+.chatbot-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.chatbot-form {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0;
+}
+
+.chatbot-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.chatbot-button {
+  padding: 8px 16px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.chatbot-button:hover {
+  background-color: #0052a3;
+}
+
+.chatbot-response {
+  margin-top: 16px;
+  padding: 16px;
+  background-color: #f5f5f7;
+  border-radius: 8px;
+  font-size: 14px;
+}
