@@ -1,12 +1,18 @@
 import "./ScrollButton.css";
 
-const ScrollButton = ({ handleClick }) => {
+const ScrollButton = ({ to }) => {
+  const handleClick = () => {
+    const targetElement = document.querySelector(to);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
-    <button className="mouse-scroll" onClick={handleClick}>
+    <a className="mouse-scroll" onClick={handleClick}>
       <span className="scroll-arrow"></span>
       <span className="scroll-arrow"></span>
       <span className="scroll-arrow"></span>
-    </button>
+    </a>
   );
 };
 
