@@ -22,7 +22,7 @@ const ChatbotAI = () => {
           type="text"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          placeholder="강태진이 누구야? 를 검색하세요"
+          placeholder="강태진이 누구야?"
           className="chatbot-input"
         />
         <button type="submit" className="chatbot-button">
