@@ -1,4 +1,9 @@
 import "./page.css";
+import LondonWeather from "./components/LondonWeather";
+import ExchangeRate from "./components/ExchangeRate";
+import GithubActivity from "./components/GithubActivity";
+import LondonTransport from "./components/LondonTransport";
+import DevNews from "./components/DevNews";
 
 export default function Hayoon() {
   return (
@@ -56,18 +61,20 @@ export default function Hayoon() {
         <div className="interSection">
           <div className="interSectionInner">
             <div className="interSectionLeft">
-              <h3 className="interSectionTitle">여기에 youtube search api</h3>
-              <p className="interSectionSubtitle">subtitle here</p>
-              <a href="#" className="interSectionLink">
-                추가 컴포넌트로
-              </a>
+              <h3 className="interSectionTitle">London Life</h3>
+              <div className="londonInfoContainer">
+                <LondonWeather />
+                <ExchangeRate />
+                <LondonTransport />
+              </div>
             </div>
+
             <div className="interSectionRight">
-              <h3 className="interSectionTitle">또 다른 api 추가</h3>
-              <p className="interSectionSubtitle">subtitle here</p>
-              <a href="#" className="interSectionLink">
-                추가 컴포넌트로
-              </a>
+              <h3 className="interSectionTitle">Dev Life</h3>
+              <div className="devInfoContainer">
+                <GithubActivity />
+                <DevNews />
+              </div>
             </div>
           </div>
         </div>
