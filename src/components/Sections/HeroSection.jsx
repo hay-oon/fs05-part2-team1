@@ -75,14 +75,16 @@ const HeroSection = () => {
                   "https://littledeep.com/wp-content/uploads/2019/04/littledeep_person_style1.png",
               }}
             />
-            <TeamCard
-              member={{
-                name: "HANSAEM JEONG",
-                position: "CTO",
-                image:
-                  "https://littledeep.com/wp-content/uploads/2019/04/littledeep_person_style1.png",
-              }}
-            />
+            <Link to="/seha">
+              <TeamCard
+                member={{
+                  name: "HANSAEM JEONG",
+                  position: "CTO",
+                  image:
+                    "https://littledeep.com/wp-content/uploads/2019/04/littledeep_person_style1.png",
+                }}
+              />
+            </Link>
             <TeamCard
               member={{
                 name: "YURI CHOI",
@@ -92,15 +94,15 @@ const HeroSection = () => {
                 comingSoon: true,
               }}
             />
-            <Link to='/hyuk'>
-            <TeamCard
-              member={{
-                name: "DONGHYUK LEE",
-                position: "CTO",
-                image:
-                  "https://littledeep.com/wp-content/uploads/2019/04/littledeep_person_style1.png",
-              }}
-            />
+            <Link to="/hyuk">
+              <TeamCard
+                member={{
+                  name: "DONGHYUK LEE",
+                  position: "CTO",
+                  image:
+                    "https://littledeep.com/wp-content/uploads/2019/04/littledeep_person_style1.png",
+                }}
+              />
             </Link>
             <TeamCard
               member={{
