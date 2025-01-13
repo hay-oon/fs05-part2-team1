@@ -15,6 +15,8 @@
 }
 
 .dataInfo {
+    color:rgb(56, 56, 56);
+    text-decoration: none;
     width: 13rem;
     margin-right: 3.5rem;
     display: flex;

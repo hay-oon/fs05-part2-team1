@@ -9,7 +9,7 @@ export function Select () {
                 <Link to='/hyuk/recommendationsByRegion/'>
                     <button>지역별 여행지 추천</button>
                 </Link>
-                <Link to='/hyuk/#'>
+                <Link to='/hyuk/nearMyLocation/'>
                     <button>내 위치 근처 지역의 여행지 추천</button>
                 </Link>
                 
