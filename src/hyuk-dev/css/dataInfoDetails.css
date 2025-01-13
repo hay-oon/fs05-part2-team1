@@ -1,0 +1,35 @@
+.dataInfoDiv {
+    width: 100%;
+    width: 50rem;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.dataInfoImg {
+    width: 50rem;
+    border-radius: 3rem;
+}
+
+.usetime {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.tags {
+    display: flex;
+    gap: 1rem;
+}
+
+.tags > div {
+    background-color: rgb(240, 240, 240);
+    border-radius: 2rem;
+    padding: 0.5rem;
+    color: rgb(77, 77, 77);
+}
+
+h4 {
+    margin-top:1rem;
+}

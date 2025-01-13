@@ -2,7 +2,7 @@
 @import url("https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css");
 
 * {
-  font-family: SUIT, Poppins;
+  font-family: Poppins, SUIT;
 }
 
 .seha h1,
