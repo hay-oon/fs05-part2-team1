@@ -39,7 +39,6 @@ const HeroSection = () => {
         <div className="hero-content">
           <h1>Hello, World.</h1>
           <p>저희 팀은 모두 코딩을 좋아하는 사람들입니다</p>
-          <button className="cta-button">자세히 알아보기</button>
         </div>
       </section>
 
@@ -60,16 +59,14 @@ const HeroSection = () => {
                 }}
               />
             </Link>
-            <Link to="/syga">
-              <TeamCard
-                member={{
-                  name: "SEUNGYEON GA",
-                  position: "CTO",
-                  image:
-                    "https://littledeep.com/wp-content/uploads/2019/04/littledeep_person_style1.png",
-                }}
-              />
-            </Link>
+            <TeamCard
+              member={{
+                name: "SEUNGYEON GA",
+                position: "CTO",
+                image:
+                  "https://littledeep.com/wp-content/uploads/2019/04/littledeep_person_style1.png",
+              }}
+            />
             <TeamCard
               member={{
                 name: "HANSAEM JEONG",
@@ -86,14 +83,16 @@ const HeroSection = () => {
                   "https://i.pinimg.com/736x/e3/ff/87/e3ff87b0270bd011a8670e85e22e8bc7.jpg",
               }}
             />
-            <TeamCard
-              member={{
-                name: "DONGHYUK LEE",
-                position: "CTO",
-                image:
-                  "https://littledeep.com/wp-content/uploads/2019/04/littledeep_person_style1.png",
-              }}
-            />
+            <Link to="/hyuk">
+              <TeamCard
+                member={{
+                  name: "DONGHYUK LEE",
+                  position: "CTO",
+                  image:
+                    "https://littledeep.com/wp-content/uploads/2019/04/littledeep_person_style1.png",
+                }}
+              />
+            </Link>
             <TeamCard
               member={{
                 name: "EUNBI CHOI",

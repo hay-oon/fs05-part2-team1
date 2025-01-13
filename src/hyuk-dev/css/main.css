@@ -1,0 +1,56 @@
+@keyframes fadein { 
+    from { 
+    	opacity: 0; 
+    } to {
+    	opacity: 1; 
+    }
+}
+
+.mainSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    animation: fadein 3s;
+    color: white;
+}
+
+.mainDiv {
+    width: 100%;
+    margin: 50px auto;
+    width: 50rem;
+    height: 45rem;
+}
+
+.mainButton {
+    background-color:rgb(207, 207, 207);
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.mainButton:hover {
+    background-color: rgb(214, 214, 214);
+    opacity: 1;
+}
+
+.backgroundVideoContent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.buttonDiv {
+    display: flex;
+    gap: 2rem;
+}
