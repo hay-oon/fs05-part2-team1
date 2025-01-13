@@ -18,7 +18,19 @@ function App() {
           <Routes>
             <Route path="/" element={<HeroSection />} />
             <Route path="/seha" element={<Seha />} />
+              
             <Route path="/hay-oon" element={<Hayoon />} />
+              
+            <Route path="/hyuk" element={<IntroduceHyuk />} />
+            <Route path="/hyuk/select" element={<Select />} />
+            <Route
+              path="/hyuk/recommendationsByRegion"
+              element={<RecommendationsByRegion />}
+            />
+            <Route path="/hyuk/dataInfoDetails" element={<DataInfoDetails />} />
+            <Route path="/hyuk/nearMyLocation" element={<NearMyLocation />} />
+            <Route path="/hyuk/searchByKeyword" element={<SearchByKeyword />} />
+              
             <Route path="/syga" element={<Syga />} />
             <Route path="/millitary" element={<Military />} />
             <Route path="/intro" element={<SygaHistory />} />
