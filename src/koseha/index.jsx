@@ -9,7 +9,7 @@ import GitHubYearContributions from "./features/contributions/GitHubContribution
 
 const Seha = () => {
   return (
-    <div class="seha">
+    <div className="seha">
       <Summary>
         <ScrollButton />
       </Summary>

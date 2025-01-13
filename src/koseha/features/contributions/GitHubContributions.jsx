@@ -69,9 +69,13 @@ function GitHubYearContributions() {
     }
   };
 
-  useEffect(async () => {
-    const today = new Date().toISOString().split(".")[0] + "Z";
-    await fetchContributions("koseha", "2024-11-28T00:00:00Z", today);
+  useEffect(() => {
+    async function fetchData() {
+      const today = new Date().toISOString().split(".")[0] + "Z";
+      await fetchContributions("koseha", "2024-11-28T00:00:00Z", today);
+    }
+
+    fetchData();
   }, []);
 
   return (
@@ -79,16 +83,17 @@ function GitHubYearContributions() {
       <div className="contributions">
         {arr &&
           arr.map((item, i) => {
-            if (item === null) return <div></div>;
+            if (item === null) return <div key={i}></div>;
             return (
               <div
+                key={i}
                 className={`data-item data-item-${item.contributionCount}`}
               ></div>
             );
           })}
         {arr &&
           todo.map((item, i) => (
-            <div className="data-item data-item-todo"></div>
+            <div key={i} className="data-item data-item-todo"></div>
           ))}
       </div>
     </div>
