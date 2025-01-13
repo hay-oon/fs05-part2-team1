@@ -1,0 +1,44 @@
+.layout-wrapper {
+  padding: 4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.content-layout-title {
+  margin-bottom: 3rem;
+}
+
+.content-layout-title h2 {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 400;
+  margin-left: 1rem;
+}
+
+.content-layout-title .custom-icon {
+  font-size: 2.6rem;
+  color: #f4623a;
+}
+
+@media (min-width: 644px) and (max-width: 1000px) {
+  .content-layout-title h2 {
+    font-size: 2.6rem;
+  }
+
+  .content-layout-title .custom-icon {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 643px) {
+  .content-layout-title h2 {
+    font-size: 2.4rem;
+  }
+
+  .content-layout-title .custom-icon {
+    font-size: 2.08rem;
+  }
+}
