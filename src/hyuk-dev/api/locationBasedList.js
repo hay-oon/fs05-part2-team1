@@ -20,7 +20,7 @@ export async function locationBasedList(longitude,latitude,pageNo) {
     `&mapY=${latitude}` +
     `&pageNo=${pageNo}` +
     `&radius=10000` +
-    `&numOfRows=5` +
+    `&numOfRows=50` +
     `&_type=json`;
   
     try {

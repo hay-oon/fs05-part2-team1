@@ -74,9 +74,9 @@ export function NearMyLocation() {
   return (
     <div className="nearMyLocationDiv">
       <h2>주변의 애견동반 여행지</h2>
-      {nearData && nearData.map((data, i) => {
+      {nearData ? nearData.map((data, i) => {
         return <RecommendData data={data} key={i} />;
-      })}
+      }): <div>주변에서 찾을 수 없습니다.</div>}
       <div id="observer" style={{ height: '10px' }}></div>
     </div>
   );

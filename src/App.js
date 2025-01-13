@@ -10,6 +10,7 @@ import { Select } from 'hyuk-dev/pages/Select/Select';
 import { RecommendationsByRegion } from 'hyuk-dev/pages/RecommendationsByRegion/RecommendationsByRegion';
 import { DataInfoDetails } from 'hyuk-dev/pages/DataInfoDetails/DataInfoDetails';
 import { NearMyLocation } from 'hyuk-dev/pages/NearMyLocation.jsx/NearMyLocation';
+import { SearchByKeyword } from 'hyuk-dev/pages/SearchByKeyword/SearchByKeyword';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             />
             <Route path="/hyuk/dataInfoDetails" element={<DataInfoDetails />} />
             <Route path="/hyuk/nearMyLocation" element={<NearMyLocation />} />
+            <Route path="/hyuk/searchByKeyword" element={<SearchByKeyword />} />
 
             <Route path="/seha" element={<Seha />} />
             <Route path="/hay-oon" element={<Hayoon />} />
