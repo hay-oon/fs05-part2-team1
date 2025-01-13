@@ -39,7 +39,6 @@ const HeroSection = () => {
         <div className="hero-content">
           <h1>Hello, World.</h1>
           <p>저희 팀은 모두 코딩을 좋아하는 사람들입니다</p>
-          <button className="cta-button">자세히 알아보기</button>
         </div>
       </section>
 

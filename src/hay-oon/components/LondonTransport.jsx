@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 export default function LondonTransport() {
   const [tubeStatus, setTubeStatus] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [currentTime, setCurrentTime] = useState(new Date());
 
   const getStatusColor = (status) => {
     if (status.toLowerCase().includes("good service")) {
@@ -16,6 +17,7 @@ export default function LondonTransport() {
     return "status-severe";
   };
 
+  // 지하철 상태 가져오기
   useEffect(() => {
     const fetchTubeStatus = async () => {
       try {
@@ -37,6 +39,15 @@ export default function LondonTransport() {
     return () => clearInterval(interval);
   }, []);
 
+  // 현재 시간 갱신
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000); // 1초마다 갱신
+
+    return () => clearInterval(timer);
+  }, []);
+
   if (loading) return <p>Loading...</p>;
 
   return (
@@ -44,7 +55,13 @@ export default function LondonTransport() {
       <h4>London Transport Status</h4>
       <div className="tubeStatusList">
         {tubeStatus?.map((line) => (
-          <div key={line.id} className="tubeLineStatus">
+          <a
+            href={`https://tfl.gov.uk/tube-dlr-overground/status/#line-lul-${line.id}`}
+            key={line.id}
+            className="tubeLineStatus"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div
               className={`statusIndicator ${getStatusColor(
                 line.lineStatuses[0].statusSeverityDescription
@@ -56,8 +73,19 @@ export default function LondonTransport() {
                 {line.lineStatuses[0].statusSeverityDescription}
               </p>
             </div>
-          </div>
+          </a>
         ))}
+      </div>
+      <div className="timeDisplay">
+        London Time:{" "}
+        {currentTime.toLocaleTimeString("en-GB", {
+          // new Date() -> currentTime : 매 초마다 변경상태 반영하기위해 state 변경
+          timeZone: "Europe/London",
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: true,
+        })}
       </div>
       <p className="update-time">Updated every 5 minutes</p>
     </div>

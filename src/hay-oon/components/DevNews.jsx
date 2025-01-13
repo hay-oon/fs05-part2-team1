@@ -61,6 +61,7 @@ export default function DevNews() {
           </a>
         ))}
       </div>
+      <p className="update-time">Updated every hour</p>
     </div>
   );
 }
