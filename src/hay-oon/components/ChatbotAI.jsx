@@ -15,7 +15,8 @@ const ChatbotAI = () => {
 
   return (
     <div className="chatbot-container">
-      <h1>Chatbot AI by Taejin Kang</h1>
+      <h1>Chatbot AI</h1>
+      <p style={{ fontSize: "14px" }}>by Taejin Kang</p>
       <form onSubmit={handleSubmit} className="chatbot-form">
         <input
           type="text"
