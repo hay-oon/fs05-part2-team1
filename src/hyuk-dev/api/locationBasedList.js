@@ -1,4 +1,4 @@
-export async function areaBasedList(areaCode, pageNo) {
+export async function locationBasedList(longitude,latitude,pageNo) {
     // 기본정보
     const baseUrl =
       'https://apis.data.go.kr/B551011/KorPetTourService/';
@@ -8,8 +8,7 @@ export async function areaBasedList(areaCode, pageNo) {
     const MobileApp = 'PetTourRecommendation';
   
     // 변화되는 정보
-    const apiName = 'areaBasedList';
-
+    const apiName = 'locationBasedList';
 
   
     const url = `${baseUrl}`+
@@ -17,9 +16,11 @@ export async function areaBasedList(areaCode, pageNo) {
     `serviceKey=${serviceKey}` +
     `&MobileOS=${MobileOS}` +
     `&MobileApp=${MobileApp}` +
-    `&areaCode=${areaCode}` +
+    `&mapX=${longitude}` +
+    `&mapY=${latitude}` +
     `&pageNo=${pageNo}` +
-    `&numOfRows=5` +
+    `&radius=10000` +
+    `&numOfRows=50` +
     `&_type=json`;
   
     try {
@@ -31,10 +32,11 @@ export async function areaBasedList(areaCode, pageNo) {
       }
   
       const result = await response.json();
-      return result.response.body;
-  
+      return result.response.body.items.item;
+
     } catch (err) {
       console.error('Error - ', err);
       return { error: err.message };
     }
 }
+  

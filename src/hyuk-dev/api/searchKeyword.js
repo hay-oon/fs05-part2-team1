@@ -1,4 +1,4 @@
-export async function searchKeyword() {
+export async function searchKeyword(keyword) {
   // 기본정보
   const baseUrl =
     'https://apis.data.go.kr/B551011/KorPetTourService/';
@@ -9,7 +9,6 @@ export async function searchKeyword() {
 
   // 변화되는 정보
   const apiName = 'searchKeyword';
-  const keyword = '공원';
 
   const url = `${baseUrl}`+
   `${apiName}?` +
@@ -17,6 +16,7 @@ export async function searchKeyword() {
   `&MobileOS=${MobileOS}` +
   `&MobileApp=${MobileApp}` +
   `&keyword=${keyword}` +
+  `&numOfRows=30` +
   `&_type=json`;
 
   try {

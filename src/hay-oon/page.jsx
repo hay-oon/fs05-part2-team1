@@ -140,7 +140,7 @@ export default function Hayoon() {
             </div>
           </div>
           <div className="flexGridCard">
-            <h3 className="flexGridCardTitle">Typscript</h3>
+            <h3 className="flexGridCardTitle">Typescript</h3>
             <p className="flexGridCardSubtitle">
               A brief description of the project.
             </p>
