@@ -5,6 +5,7 @@ import AboutMe from "./sections/AboutMe";
 import ContentLayout from "./features/layouts/ContentLayout";
 import Skills from "./sections/Skills";
 import Archiving from "./sections/Archiving";
+import GitHubYearContributions from "./features/contributions/GitHubContributions";
 
 const Seha = () => {
   return (
@@ -29,6 +30,9 @@ const Seha = () => {
         titleBorderColor="#6c757d"
       >
         <Archiving />
+      </ContentLayout>
+      <ContentLayout title="WITH CODEIT" id="codeit">
+        <GitHubYearContributions />
       </ContentLayout>
       {/* projects */}
     </div>
