@@ -4,7 +4,7 @@ import ExchangeRate from "./components/ExchangeRate";
 import GithubActivity from "./components/GithubActivity";
 import LondonTransport from "./components/LondonTransport";
 import DevNews from "./components/DevNews";
-
+import ChatbotAI from "./components/ChatbotAI";
 export default function Hayoon() {
   return (
     <section className="container">
@@ -41,6 +41,9 @@ export default function Hayoon() {
       </div>
 
       <div className="grayBackground">
+        <div className="graySectionCard wide-card">
+          <ChatbotAI />
+        </div>
         <div className="graySectionWrapper">
           <div className="graySectionCard">
             <h2 className="graySectionTitle">About Me</h2>
@@ -133,6 +136,7 @@ export default function Hayoon() {
             <p>🇩🇪 Achieve German A2 level</p>
           </div>
         </div>
+
         <div>
           <h2 className="featuredTitle">Skills</h2>
           <p className="featuredSubtitle">

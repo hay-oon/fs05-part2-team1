@@ -3,19 +3,27 @@ import { Link } from "react-router-dom";
 import "./HeroSection.css";
 
 const TeamCard = ({ member, index }) => (
-  <div key={index} className="team-card">
+  <div
+    key={index}
+    className={`team-card ${member.comingSoon ? "coming-soon" : ""}`}
+  >
     <div className="team-card-inner">
       <div className="team-card-front">
         <img src={member.image} alt={member.name} />
         <div className="team-card-content">
           <h3>{member.name}</h3>
+          {member.comingSoon && <p className="coming-soon-text">Coming Soon</p>}
         </div>
       </div>
       <div className="team-card-back">
         <div className="team-card-back-content">
           <h3>{member.name}</h3>
           <p className="position">{member.position}</p>
-          <p className="more">자세히 보기</p>
+          {member.comingSoon ? (
+            <p className="coming-soon-message">페이지 준비중입니다</p>
+          ) : (
+            <p className="more">자세히 보기</p>
+          )}
         </div>
       </div>
     </div>
@@ -83,6 +91,7 @@ const HeroSection = () => {
                 position: "CTO",
                 image:
                   "https://i.pinimg.com/736x/e3/ff/87/e3ff87b0270bd011a8670e85e22e8bc7.jpg",
+                comingSoon: true,
               }}
             />
             <Link to='/hyuk'>
@@ -101,6 +110,7 @@ const HeroSection = () => {
                 position: "CTO",
                 image:
                   "https://i.pinimg.com/736x/e3/ff/87/e3ff87b0270bd011a8670e85e22e8bc7.jpg",
+                comingSoon: true,
               }}
             />
           </div>
@@ -142,7 +152,7 @@ const HeroSection = () => {
         </div>
       </section>
 
-      <section className="device-section">
+      <section className="device-section" id="contact">
         <div className="section-container">
           <h2>Real-time Career Chat</h2>
           <p className="section-subtitle">
