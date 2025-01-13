@@ -47,6 +47,7 @@ export default function LondonWeather() {
         </div>
         <span className="weatherDesc">{weather?.weather[0]?.description}</span>
       </div>
+      <p className="update-time">Updated every 5 minutes</p>
     </div>
   );
 }
