@@ -11,7 +11,7 @@ const Seha = () => {
   return (
     <div className="seha">
       <Summary>
-        <ScrollButton />
+        <ScrollButton to={"#aboutMe"} />
       </Summary>
       {/* header-nav : sticky */}
       <ContentLayout title="ABOUT ME" id="aboutMe">
@@ -31,7 +31,7 @@ const Seha = () => {
       >
         <Archiving />
       </ContentLayout>
-      <ContentLayout title="WITH CODEIT" id="codeit">
+      <ContentLayout title="WITH CODEIT" id="codeit" backgroundColor="#ebebeb">
         <GitHubYearContributions />
       </ContentLayout>
       {/* projects */}
